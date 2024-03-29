@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+ <link rel="stylesheet"  href="style.css">
+<style>
+      
+        input {
+            border: none;
+            border-bottom: 1px solid #ccc; 
+            outline: none;
+            padding: 5px; 
+            width: 100%;
+            box-sizing: border-box; 
+        }
+        button1{
+        border :thin;
+        width: 1cm;
+        }
+
+       
+        label {
+            position: absolute;
+            top: -15px; 
+            left: 5px; 
+            background-color: white; 
+            padding: 0 3px; 
+        }
+
+      
+        p {
+            position: relative; 
+            margin-top: 20px; /* Adjust spacing between input blocks */
+        }
+       
+   
+    </style>
+    <script>
+    function validateForm() {
+       
+        var inputs = document.querySelectorAll('input[required]');
+        for (var i = 0; i < inputs.length; i++) {
+            if (!inputs[i].value) {
+                alert("Please fill in all required fields.");
+                return false;
+            }
+        }
+        
+        window.location.href = "Web2.html";
+        return false; 
+    }
+</script>
+</head>
+
+<body style="background-color: #1090e4">
+  <div class="container-fluid" id="mainsec">
+  <div class="logo-oursrc d-flex align-items-start">
+    <div>
+          <svg viewBox="0 0 119 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="jss161 pb-4" style="height: 55px; color:white;"><path d="M47.44 4.585l-5.66 14.58h2.52l1.33-3.46h6.16l1.33 3.46h2.52l-5.66-14.58h-2.54zm-.92 8.83l2.19-5.68 2.19 5.68h-4.38zM59.35 10.725v-1.43h-2.37v9.87h2.5v-6.46s.69-1.33 2.21-1.33c.73 0 1.19.23 1.19.23l.88-2.25s-.81-.31-1.71-.31c-1.85 0-2.7 1.68-2.7 1.68zM69.63 17.075c-1.69 0-2.77-1.31-2.77-2.85s1.08-2.85 2.77-2.85c1.5 0 2.31 1.04 2.31 1.04l1.73-1.54s-1.4-1.83-4.04-1.83c-2.96 0-5.31 2.27-5.31 5.19 0 2.89 2.35 5.19 5.31 5.19 2.67 0 4.08-1.87 4.08-1.87l-1.65-1.67c.01-.01-.74 1.19-2.43 1.19zM82.42 10.585s-.92-1.54-2.98-1.54c-2.56 0-4.81 2.15-4.81 5.19 0 3.04 2.25 5.19 4.81 5.19 2.12 0 2.98-1.54 2.98-1.54v1.29h2.31v-9.88h-2.31v1.29zm-.19 5.12s-.73 1.37-2.33 1.37c-1.69 0-2.73-1.23-2.73-2.85s1.04-2.85 2.73-2.85c1.6 0 2.33 1.37 2.33 1.37v2.96zM92.52 9.045c-2.08 0-2.96 1.69-2.96 1.69v-1.44h-2.33v9.87h2.5v-6.52s.67-1.27 1.96-1.27c1.08 0 1.96.6 1.96 2.02v5.77h2.5v-6.39c-.01-2.38-1.72-3.73-3.63-3.73zM103.58 16.515l-3.33-7.23h-2.77l4.81 10.1-.4 1.02c-.48 1.21-.83 1.46-1.69 1.46-.65 0-1.31-.65-1.31-.65l-1.17 1.94s1.14 1.04 2.64 1.04c1.46 0 2.85-.67 3.71-2.83l4.79-12.08h-2.69l-2.59 7.23zM114.78 13.265c-1.67-.35-2.33-.5-2.33-1.1 0-.6.85-.94 1.79-.94 1.33 0 2.46.85 2.46.85l1.25-1.83s-1.48-1.21-3.71-1.21c-2.71 0-4.25 1.54-4.25 3.08 0 1.87 1.71 2.71 3.66 3.12 1.5.31 1.96.44 1.96 1.08 0 .6-.85.9-1.87.9-1.67 0-2.98-1.42-2.98-1.42l-1.4 1.81s1.56 1.79 4.46 1.79c2.52 0 4.31-1.35 4.31-3.04 0-2.02-1.39-2.67-3.35-3.09zM19.79 1.595c-.01-.03-.04-.06-.05-.09-.03-.06-.06-.11-.1-.17-.03-.05-.07-.1-.11-.15-.04-.05-.08-.09-.12-.13-.05-.05-.09-.09-.15-.13-.04-.04-.09-.07-.13-.1-.06-.04-.12-.07-.18-.1a.405.405 0 00-.09-.05c-.02-.01-.04-.01-.06-.02a.697.697 0 00-.19-.06c-.05-.02-.11-.03-.16-.04-.06-.01-.12-.02-.18-.02a.566.566 0 00-.18-.03c-.06 0-.12.01-.18.01-.06.01-.12.01-.18.02s-.12.03-.17.05l-.18.06c-.02.01-.04.01-.06.02-.03.02-.06.04-.09.05a1.505 1.505 0 00-.31.21c-.05.04-.09.08-.13.12-.05.05-.09.09-.13.14-.04.04-.07.09-.1.14-.04.06-.07.12-.1.18-.02.03-.04.06-.05.09l-7.35 15.99H1.87c-1.03 0-1.87.84-1.87 1.87 0 1.03.84 1.87 1.87 1.87h8c.07 0 .13-.01.2-.02.06.01.13.02.19.02.71 0 1.39-.41 1.7-1.09l6.12-13.37 6.11 13.37c.31.69.99 1.09 1.7 1.09a1.87 1.87 0 001.7-2.65l-7.8-17.08z" fill="currentColor"></path></svg>     
+    </div>
+ 
+  </div>
+
+    <div class=" card">
+      <div class="card-body " style="border-bottom:1px solid rgb(230, 230, 230);">
+  
+<form class="" id="regForm" action="submit_form.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()" >
+<div class="tab">
+
+          <div class="p-4">
+            <img id="imgpro" style="height:80px; border-radius: 100px;" src="https://www.arcanys.com/_next/static/image/common/assets/img/fredPhoto.6cefe48e23d085af5881990d96ec4cd8.jpg" alt="">&nbsp; &nbsp; &nbsp;<span style="font-size: 25px; color:#212121; font-weight: 900; font-family: Raleway;">Hey there,</span>
+          </div>
+  
+        <div class="row align-items-start pe-4 ps-4 ">
+  
+            <div class="col-md-5 col-sm-12 col-lg-5 p-3">
+  
+              <p style="font-weight: 600; font-size: 15px;">Before we start, let me outline what Arcanys does and does not collaborate on:</p>
+              <p style="font-weight: 600; color:rgb(34, 34, 34);font-size: 14px;" class="pt-3 pb-2"><span><i style="font-size: 18px; color:rgb(0, 202, 158)" class="fa fa-times-circle-o" aria-hidden="true"></i></span>&nbsp; Long-term development team augmentation</p>
+              <p style="font-weight: 400; color:rgb(34, 34, 34);font-size: 13px;">We specialize in complementing in-house development teams with exceptional full-time dedicated developers on a long-term basis. The minimum team size is 2 developers (plus part-time testing and project management, if needed) for at least 12 months.</p>
+          
+              <p class="p-3" style="background-color: #f8f8f8; font-size: 13px;"><span style="font-weight: 600;"> Risk-free trials :</span> We let you test the waters and assess our capabilities. If you're not 100% satisfied with the output, you owe us nothing.</p>
+              <p  style="font-weight: 600; color:rgb(34, 34, 34);font-size: 14px;"><span><i style="font-size: 18px; color:hsl(5, 100%, 50%)" class="fa fa-times-circle-o" aria-hidden="true"></i></span>&nbsp; Corporate website design</p>
+              <p style="font-weight: 600; color:rgb(34, 34, 34);font-size: 14px;"><span><i style="font-size: 18px; color:hsl(5, 100%, 50%)" class="fa fa-times-circle-o" aria-hidden="true"></i></span>&nbsp; Fixed-cost projects</p>
+              <p style="font-weight: 600; color:rgb(34, 34, 34);font-size: 14px;"><span><i style="font-size: 18px; color:hsl(5, 100%, 50%)" class="fa fa-times-circle-o" aria-hidden="true"></i></span>&nbsp; Engagements shorter than 12 months</p>
+              <p class="pt-3 pb-3" style="font-weight: 500; color:rgb(31, 31, 31);font-size: 15px;">Sounds like what you need? Please help me better understand your expectations before our first call.</p>
+              <p>Thanks, and talk soon!</p>
+              <p>Frederic Joye</p>
+              <p>Co-founder, Arcanys</p>
+          
+          
+           
+          </div>
+          <div class="col-md-7 col-sm-12 col-lg-7">
+
+            <div class="row">
+
+              <div class="col-md-6 col-sm-12 col-lg-6">
+
+                <p id="floating_input"> <label>First name *</label>
+                  <input  name="fname" required>
+                 
+                </p>
+
+                <p id="floating_input"><label>Email *</label>
+                  <input name="email" required>
+                  
+                </p>
+                
+                <p id="floating_input"><label class="pt-1">Company HQ (country) *</label>
+                  <input name="cmpnyhq" required>
+                  
+                </p>
+                
+
+              </div>
+              <div class="col-md-6 col-sm-12 col-lg-6">
+
+                <p id="floating_input"> <label class="pt-1">Last name *</label>
+                  <input  name="lname" required>
+                 
+                </p>
+                
+                <p id="floating_input"><label class="pt-1">Company Name *</label>
+                  <input name="companyname"required>
+                  
+                </p>
+                
+                <p  id="floating_input"><input  name="tellsomething" required>
+                  
+                  <label class="pt-1">Tell us about your needs *</label>
+                </p>
+
+              </div>
+
+            </div>
+      
+        
+          </div>
+         
+        
+     <center><button type="submit" id="button1">NEXT</button></center>
+
+        </div>
+        </form>
+      </div>
+      </div>
+      </div>
+      </body><br>
+    
+        <br></br>
+      </html>
+     
